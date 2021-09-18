@@ -1,0 +1,61 @@
+<div class="questions">
+    <form action="/" method="POST" >
+        
+        <input type="hidden" id="author" name="author" value=<%= username %> />
+        
+        <div class="form-line">
+            <label>نص السؤال: </label>
+            <textarea id="question" name="question" placeholder="ادخل سؤالك هنا " required></textarea>
+        </div>
+        <div class="towcol">
+            <div class="form-line">
+                <label>الجواب الصحيح: </label>
+                <input type="text" id="answer" name="answer" placeholder="ادخل الجواب الصحيح" required/>
+            </div>
+            <div class="form-line">
+                <label>خاطئ 1: </label>
+                <input type="text" id="wrong1" name="wrong1" placeholder="ادخل جواب خاطئ" required/>
+            </div>
+        </div> 
+        <div class="towcol">
+            <div class="form-line">
+                <label>خاطئ 2: </label>
+                <input type="text" id="wrong2" name="wrong2" placeholder="ادخل جواب خاطئ" required/>
+            </div>
+            <div class="form-line">
+                <label>خاطئ 3: </label>
+                <input type="text" id="wrong3" name="wrong3" placeholder="ادخل جواب خاطئ" required/>
+            </div>
+        </div>
+        <div class="towcol">
+            <div class="form-line">
+                <label>التصنيف: </label>
+                <select name="category" id="category" required>
+                    <option value="علوم طبيعية">علوم طبيعية</option>
+                    <option value="علوم إنسانية">علوم إنسانية</option>
+                    <option value="دين">دين</option>
+                    <option value="تاريخ">تاريخ</option>
+                    <option value="جغرافية">جغرافية</option>
+                    <option value="فنون وآداب">فنون وآداب</option>
+                    <option value="رياضة">رياضة</option>
+                    <option value="لغات">لغات</option>
+                    <option value="تكنولوجيا">تكنولوجيا</option>
+                  </select>    
+            </div>
+            <div class="form-line">
+                <label>المستوى: </label>
+                <select name="level" id="level" required>
+                    <option value="1">سهل جداً</option>
+                    <option value="2">سهل</option>
+                    <option value="3">متوسط</option>
+                    <option value="4">صعب</option>
+                    <option value="5">صعب جداً</option>
+                  </select>    
+            </div>
+        </div>
+        <div class="form-line">
+            <button type="submit" id="submitquestion">إدخال السؤال</button>
+        </div>
+    </form>
+    <p id='message2' style='color:red; font-size:13px; text-align:center'></p>
+</div>

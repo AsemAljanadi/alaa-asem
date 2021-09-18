@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ar" dir='rtl'>
+<%- include('./components/head.ejs')  %> 
+<body>
+       
+    <div class="Delete-div">
+        <div class="Delete-div-content">
+            <h2>هل تريد حدف هذا السجل بالتأكيد؟</h2>
+            <div class="option">
+                <a id="deleteSure">موافق</a>
+                <a id='cancelBtn' onclick="normalState()">إلغاء</a>
+            </div>
+        </div>
+        
+    </div>
+    <div class="container">
+        <%- include('./components/header.ejs') %>
+        <%- include('./components/logout.ejs') %> 
+
+
+        <%- include('./components/showMyAllQuestions.ejs')  %> 
+
+
+        <%- include('./components/footer.ejs') %> 
+
+    </div>
+<script src="/script.js"></script>
+
+</body>
+</html>

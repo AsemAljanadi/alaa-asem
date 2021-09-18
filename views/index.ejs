@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ar" dir='rtl'>
+<%- include('./components/head.ejs')  %> 
+<body>
+    <div class="container">
+
+        <%- include('./components/header.ejs') %> 
+
+        
+        <% if (islogedin == false){ %> 
+            <%- include('./components/login.ejs') %> 
+        <% } %> 
+
+        <% if (islogedin == true){ %>
+            <%- include('./components/logout.ejs');  %>
+            <%- include('./components/questionsForm.ejs'); %> 
+        <% } %>
+        
+        <%- include('./components/footer.ejs') %> 
+
+    </div>
+
+    <script src="/script.js"></script>
+</body>
+</html>

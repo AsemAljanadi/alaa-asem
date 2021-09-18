@@ -1,0 +1,468 @@
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap');
+
+* {
+	padding: 0;
+	margin: 0;
+	font-family: 'Almarai', sans-serif;
+	box-sizing: border-box;
+	user-select: none;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	width: 60%;
+	margin: 0 auto;
+	height: 100vh;
+	justify-content: space-between;
+	align-items: center;
+	transition: 0.3s linear;
+}
+@media (max-width: 1024px) {
+	.container {
+		display: flex;
+		flex-direction: column;
+		width: 95%;
+		margin: 0 auto;
+		justify-content: space-between;
+		align-items: center;
+	}
+}
+
+.header {
+	background-color: #203e6b;
+	color: #fff;
+	font-size: 1.3vw;
+	font-weight: bold;
+	width: 100%;
+	text-align: center;
+	padding: 10px 0;
+	margin-bottom: 5px;
+}
+@media (max-width: 1024px) {
+	.header {
+		background-color: #203e6b;
+		color: #fff;
+		font-size: 2.5vw;
+		font-weight: bold;
+		width: 100%;
+		text-align: center;
+		padding: 10px 0;
+		margin-bottom: 5px;
+	}
+}
+.login {
+	width: 90%;
+	font-size: 0.9vw;
+	border: 1px solid #203e6b;
+	border-radius: 15px;
+	padding: 10px;
+	margin: 5px;
+	background-color: rgb(248, 248, 248);
+	display: block;
+}
+.new-user {
+	width: 90%;
+	font-size: 0.9vw;
+	border: 1px solid #203e6b;
+	border-radius: 15px;
+	padding: 10px;
+	margin: 5px;
+	background-color: rgb(248, 248, 248);
+	display: block;
+}
+@media (max-width: 1024px) {
+	.login {
+		width: 100%;
+		font-size: 2.5vw;
+		font-weight: bold;
+		border: 1px solid #203e6b;
+		border-radius: 15px;
+		padding: 10px;
+		margin: -200px 8px 8px 8px;
+		background-color: rgb(248, 248, 248);
+		display: block;
+	}
+}
+@media (max-width: 1024px) {
+	.new-user {
+		display: block;
+		width: 100%;
+		font-size: 2.5vw;
+		font-weight: bold;
+		border: 1px solid #203e6b;
+		border-radius: 15px;
+		padding: 10px;
+		margin: 8px;
+		background-color: rgb(248, 248, 248);
+		display: block;
+	}
+}
+.towcol {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 100%;
+}
+
+@media (max-width: 1024px) {
+	.towcol {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		width: 100%;
+	}
+}
+.form-line {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 100%;
+	align-items: start;
+	padding: 0 8px;
+	margin: 5px 0;
+}
+.form-line input {
+	width: 100%;
+	font-size: 0.8vw;
+	margin: 0 0;
+	padding: 5px;
+	line-height: 1.6em;
+}
+@media (max-width: 1024px) {
+	.form-line input {
+		width: 100%;
+		font-size: 2.5vw;
+		margin: 0 0;
+		padding: 5px;
+		line-height: 1.6em;
+	}
+}
+.form-line select {
+	width: 100%;
+	font-size: 0.8vw;
+	margin: 0 0;
+	padding: 8px;
+	line-height: 1.6em;
+}
+@media (max-width: 1024px) {
+	.form-line select {
+		width: 100%;
+		font-size: 2.5vw;
+		margin: 0 0;
+		padding: 8px;
+		line-height: 1.6em;
+	}
+}
+
+.form-line label {
+	padding-bottom: 5px;
+}
+@media (max-width: 1024px) {
+	.form-line label {
+		padding-bottom: 8px;
+	}
+}
+.form-line textarea {
+	width: 100%;
+	height: 8vh;
+	font-size: 0.8vw;
+	margin: 5px 0;
+	padding: 10px;
+	resize: none;
+}
+@media (max-width: 1024px) {
+	.form-line textarea {
+		width: 100%;
+		height: 80px;
+		font-size: 2.5vw;
+		margin: 5px 0;
+		padding: 10px;
+		resize: none;
+	}
+}
+.form-line button {
+	width: 40%;
+	background-color: #203e6b;
+	color: #fff;
+	font-size: 0.9vw;
+	font-weight: bold;
+	border: none;
+	text-align: center;
+	align-self: center;
+	padding: 10px 5px;
+	margin-top: 8px;
+}
+@media (max-width: 1024px) {
+	.form-line button {
+		width: 60%;
+		background-color: #203e6b;
+		color: #fff;
+		font-size: 2.6vw;
+		font-weight: bold;
+		border: none;
+		text-align: center;
+		align-self: center;
+		padding: 10px 5px;
+		margin-top: 8px;
+	}
+}
+.form-line button:hover {
+	background-color: #1b49b5;
+	cursor: pointer;
+}
+
+.questions {
+	width: 100%;
+	font-size: 0.9vw;
+	border: 2px solid #203e6b;
+	border-radius: 15px;
+	padding: 10px;
+	margin: 5px;
+	background-color: rgb(248, 248, 248);
+	display: block;
+}
+@media (max-width: 1024px) {
+	.questions {
+		width: 100%;
+		font-size: 2.5vw;
+		font-weight: bold;
+		border: 2px solid #203e6b;
+		border-radius: 15px;
+		padding: 10px;
+		margin: 5px;
+		background-color: rgb(248, 248, 248);
+		display: block;
+	}
+}
+
+footer {
+	background-color: #2a2a2b;
+	color: #fff;
+	font-size: 0.7vw;
+	bottom: 0;
+	width: 100%;
+	right: 0;
+	padding: 10px 0;
+	text-align: center;
+	word-spacing: 3px;
+}
+@media (max-width: 1024px) {
+	footer {
+		background-color: #2a2a2b;
+		color: #fff;
+		font-size: 1.9vw;
+		bottom: 0;
+		width: 100%;
+		right: 0;
+		padding: 10px 0;
+		text-align: center;
+	}
+}
+.logout {
+	width: auto;
+	height: auto;
+	font-size: 0.7vw;
+	text-align: center;
+	display: block;
+}
+
+@media (max-width: 1024px) {
+	.logout {
+		width: auto;
+		height: auto;
+		font-size: 2vw;
+		text-align: center;
+		display: block;
+	}
+}
+.logout input[type="submit"] {
+	background-color: #551461;
+	color: #fff;
+	font-size: 0.9vw;
+	font-weight: bold;
+	border: none;
+	padding: 10px 5px;
+	margin-top: 5px;
+}
+@media (max-width: 1024px) {
+	.logout input[type="submit"] {
+		background-color: #551461;
+		color: #fff;
+		font-size: 2vw;
+		font-weight: bold;
+		border: none;
+		padding: 10px 5px;
+		margin-top: 5px;
+	}
+}
+.logout input[type="submit"]:hover {
+	background-color: black;
+}
+
+#theUserName {
+	font-size: 0.9vw;
+	margin: 5px;
+	border: 1px solid #551461;
+	border-radius: 15px;
+	padding: 10px;
+}
+#theUserName a {
+	text-decoration: none;
+	padding: 10px;
+	color: black;
+}
+#theUserName a:hover {
+	text-decoration: none;
+	padding: 10px;
+	background-color: #203e6b;
+	color: white;
+}
+
+@media (max-width: 1024px) {
+	#theUserName {
+		font-size: 2vw;
+		margin: 5px;
+		border: 1px solid #551461;
+		border-radius: 15px;
+		padding: 10px;
+	}
+	#theUserName a {
+		text-decoration: none;
+		padding: 10px;
+		color: black;
+	}
+	#theUserName a:hover {
+		text-decoration: none;
+		padding: 10px;
+		background-color: #203e6b;
+		color: white;
+	}
+}
+/*//////////////////////////////////////////////////////////////////////////////////////////////*/
+.all-questions {
+	display: flex;
+	flex-direction: row;
+	justify-content: start;
+	flex-wrap: wrap;
+	align-items: start;
+	width: 100%;
+	font-size: 1vw;
+}
+.question-temp {
+	display: flex;
+	flex-direction: column;
+	flex: 40%;
+	border: 1px solid #203e6b;
+	border-radius: 15px;
+	padding: 10px;
+	margin: 5px;
+	background-color: rgb(248, 248, 248);
+}
+.question-temp > * {
+	margin: 5px 10px;
+}
+
+@media (max-width: 1024px) {
+	.all-questions {
+		display: flex;
+		flex-direction: column;
+		justify-content: start;
+		flex-wrap: nowrap;
+		font-size: 2vw;
+	}
+	.question-temp {
+		width: 95%;
+		border: 1px solid #203e6b;
+		border-radius: 15px;
+		padding: 10px;
+		margin: 5px;
+		background-color: rgb(248, 248, 248);
+	}
+}
+
+.pages {
+	margin: 10px;
+	padding: 10px;
+}
+.pages input[type="submit"] {
+	width: 30px;
+	height: 30px;
+	background-color: #203e6b;
+	color: white;
+	font-size: 0.9vw;
+	border: none;
+}
+.pages input[type="submit"]:hover {
+	background-color: #1b49b5;
+	color: white;
+	cursor: pointer;
+}
+.control {
+	padding: 5px;
+	width: 30%;
+	margin: 5px auto;
+	border: 1px solid #ccc;
+	border-radius: 15px;
+	background-color: #fff;
+	text-align: center;
+}
+.control img {
+	width: 30px;
+	height: 30px;
+	margin: 0 10px;
+	opacity: 60%;
+}
+.control img:hover {
+	opacity: 100%;
+}
+
+.Delete-div {
+	position: fixed;
+	width: 30%;
+	height: auto;
+	top: 50%;
+	left: 50%;
+	margin-top: -1000px; /* Negative half of height. */
+	margin-left: -15%; /* Negative half of width. */
+	background-color: rgba(0, 0, 0, 1); /* Black w/ opacity */
+	border: 2px solid #222;
+	border-radius: 15px;
+	display: block;
+	overflow: auto;
+	z-index: 3;
+	transition: 0.3s linear;
+}
+.Delete-div-content {
+	background-color: #fff;
+	padding: 5px 5px 0 5px;
+}
+.Delete-div h2 {
+	margin: 5px 5px 40px 5px;
+	color: #1b49b5;
+	text-align: center;
+}
+.Delete-div .option {
+	display: flex;
+	flex-direction: row;
+	width: 80%;
+	justify-content: space-evenly;
+	margin: 10px auto 0 auto;
+	border-top: 1px dashed #ccc;
+}
+.Delete-div a {
+	text-decoration: none;
+	padding: 10px;
+	color: black;
+}
+.Delete-div a:hover {
+	text-decoration: none;
+	padding: 10px;
+	background-color: #203e6b;
+	color: white;
+	cursor: pointer;
+}
+.blur {
+	filter: blur(3px);
+	pointer-events: none;
+}

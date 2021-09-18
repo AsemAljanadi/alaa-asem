@@ -1,0 +1,26 @@
+<div class="logout">
+    <div id="theUserName">
+        <% if (level =='0'){ %>
+            <p>المستخدم الحالي: <%= username%></p>
+            <br/>
+            <a href="/">الرئيسية</a> |
+            <a href="/add-user">اضافة مستخدم جديد</a> |
+            <a href="/my-questions">أسئلتي</a> |  
+            <a href="/all-questions">رؤية الأسئلة</a>
+            <br/>
+        <% } %> 
+
+        <% if(level !='0'){%> 
+            <p>المستخدم الحالي: <%= username%></p>
+            <br/>
+            <a href="/">الرئيسية</a> |
+            <a href="/my-questions">أسئلتي</a>
+        <% } %> 
+    </div>
+    <div>
+        <form action="/" method="POST" >
+            <input type="hidden" id="iwantlogout" name="iwantlogout" value="iwantlogout" />
+            <input type='submit' id="logoutBtn" name="logout"  value='تسجيل الخروج'/>
+        </form>
+    </div>
+</div>

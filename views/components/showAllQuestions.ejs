@@ -1,0 +1,46 @@
+<% numberOfQuestions = questions.length; %>
+<% numberOfPages = Math.ceil(numberOfQuestions / 30); %>
+
+<div class="pages">
+    <form action="/all-questions" method="POST" >
+        <% for(i=0;i<numberOfPages; i++){ %> 
+            <input type='submit' value=<%= i+1 %> id=<%= i+1 %> name=<%= `Page` %>  />  
+        <% } %>
+    </form> 
+</div>
+
+<div class="all-questions">
+    <% if (numberOfQuestions > 0) { %>
+        <% for(j = ((pageNumber-1) * 30); j< pageNumber * (30);j++){%>
+            <% if(j == numberOfQuestions){break;} %>
+            <div class="question-temp">
+                <h3 style="color:#1b49b5"><%= j+1 %> - <%= questions[j].question %>؟</h3>
+                <h4>الجواب الصحيح: <span style="color:green"><%= questions[j].answer %></span></h4>
+                <h5>جواب خاطئ1: <span ><%= questions[j].wrong1 %></span></h5>
+                <h5>جواب خاطئ2: <span><%= questions[j].wrong2 %></span></h5>
+                <h5>جواب خاطئ3: <span><%= questions[j].wrong3 %></span></h5>
+                <p>التصنيف: <span><%= questions[j].category %></span></p>
+                <p>المستوى: <span><%= questions[j].level %></span></p>
+                <h5>الكاتب: <span><%= questions[j].author %></span></h5>
+                <div class="control">
+                    <a title="حذف" id="deleteBtn" onclick="deleteHandler(this)"  data-myid=<%= questions[j]._id %>><img src='/delete.png'></a>
+                    <a title="تعديل" id="editBtn" onclick="editHandler(this)"  data-myid=<%= questions[j]._id %>><img src='/edit.png'></a>
+                </div>
+            </div>
+        <% } %>
+</div> 
+    <div class="pages">
+        <form action="/all-questions" method="POST" >
+            <% for(i=0;i<numberOfPages; i++){ %> 
+                <input type='submit' value=<%= i+1 %> id=<%= i+1 %> name=<%= `Page` %>  />  
+            <% } %>
+        </form> 
+    </div>
+    
+    <% } else{%>
+<div class="all-questions">
+        <div class="question-temp">
+            <h3>لا توجد اسئلة</h3>
+        </div>
+</div>
+    <% }%>   
