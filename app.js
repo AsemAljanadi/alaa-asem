@@ -8,7 +8,7 @@ const port = process.env.PORT || 5000;
 
 
 app.set('view engine', 'ejs');
-
+///////////////
 //////////////////////////////////////////////
 let mycookie;
 function checkIfIsCookie(req){
