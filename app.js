@@ -24,7 +24,7 @@ function checkIfIsCookie(req){
     }
     
 }
-
+/////////////////////////
 //////////////////////////////
 const dbURI = 'mongodb+srv://alaa:12Ra12ga2016d@nodetest.rosfk.mongodb.net/thequestions?retryWrites=true&w=majority';
 mongoose.connect(dbURI,{useNewUrlParser:true, useUnifiedTopology:true})
